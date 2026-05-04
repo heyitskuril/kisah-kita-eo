@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Check, ChevronRight, Quote } from 'lucide-react';
+import { Check, ChevronRight } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 
 const SELLING_POINTS = [
@@ -31,7 +31,7 @@ export function AboutSection() {
               style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%)' }}
             >
               <img
-                src="https://images.unsplash.com/photo-1541250848049-b4f71413cc30?w=800&q=80"
+                src="/images/about-image.webp"
                 alt="Tim Kisah Kita"
                 className="w-full aspect-[4/5] object-cover scale-x-[-1]"
                 loading="lazy"
@@ -39,22 +39,6 @@ export function AboutSection() {
             </motion.div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-secondary rounded-full -z-0 opacity-50" />
             <div className="absolute top-20 -left-10 w-20 h-20 bg-brand-accent/20 rounded-full blur-2xl animate-pulse" />
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="absolute -bottom-6 -left-6 z-20 bg-brand-dark text-white p-6 rounded-2xl shadow-xl max-w-[240px]"
-            >
-              <Quote className="text-brand-accent mb-4" size={24} aria-hidden="true" />
-              <p className="text-sm italic font-light leading-relaxed mb-4">
-                "Setiap pasangan punya nada yang unik. Tugas kami adalah mengaransemennya menjadi
-                simfoni yang indah."
-              </p>
-              <p className="text-xs font-bold tracking-widest uppercase text-brand-secondary/60">
-                — Founder, Kisah Kita
-              </p>
-            </motion.div>
           </div>
 
           <div>
@@ -62,7 +46,7 @@ export function AboutSection() {
               title="Kami Percaya Bahwa Setiap Detail Punya Cerita"
               subtitle="Filosofi Kami"
             />
-            <p className="text-brand-text/70 text-lg mb-8 leading-relaxed">
+            <p className="text-brand-text/100 text-lg mb-8 leading-relaxed">
               Di Kisah Kita, kami menjunjung tinggi nilai-nilai{' '}
               <span className="text-brand-dark font-semibold">Organised Tranquility</span>. Kami
               paham bahwa perencanaan pernikahan bisa melelahkan, itulah sebabnya kami hadir untuk
@@ -77,7 +61,7 @@ export function AboutSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-dark">{point.title}</h4>
-                    <p className="text-sm text-brand-text/60">{point.description}</p>
+                    <p className="text-sm text-brand-text/80">{point.description}</p>
                   </div>
                 </li>
               ))}

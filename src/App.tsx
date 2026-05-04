@@ -3,7 +3,6 @@ import { FloatingWhatsApp } from '@/components/ui/FloatingWhatsApp';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/features/hero/HeroSection';
-import { StatsSection } from '@/features/stats/StatsSection';
 import { AboutSection } from '@/features/about/AboutSection';
 import { PackagesSection } from '@/features/packages/PackagesSection';
 import { AdvantagesSection } from '@/features/advantages/AdvantagesSection';
@@ -31,7 +30,6 @@ export default function App() {
 
       <main>
         <HeroSection />
-        <StatsSection />
         <AboutSection />
         <PackagesSection />
         <AdvantagesSection />

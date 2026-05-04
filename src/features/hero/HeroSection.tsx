@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'motion/react';
-import { ChevronDown, ChevronRight, Stars } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '@/constants/business';
 import { buildGeneralLink } from '@/utils/whatsapp';
 
@@ -25,7 +25,7 @@ export function HeroSection() {
     <header className="relative h-[100vh] flex items-center overflow-hidden bg-brand-dark">
       <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&q=85&fit=crop"
+          src="/images/hero-bg-image.webp"
           alt="Wedding ceremony background"
           className="w-full h-full object-cover opacity-60 scale-110"
           loading="eager"
@@ -46,7 +46,7 @@ export function HeroSection() {
             variants={fadeUp}
             className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-brand-accent/20 border border-brand-accent/30 text-brand-accent text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm"
           >
-            <Stars size={14} /> Wedding & Event Planner Yogyakarta
+              Wedding & Event Planner Yogyakarta
           </motion.div>
 
           <motion.h1 variants={fadeUp} className="heading-display text-white mb-6">
@@ -83,16 +83,6 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
-
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 flex flex-col items-center gap-2"
-        aria-hidden="true"
-      >
-        <span className="text-[10px] uppercase tracking-widest font-bold">Scroll</span>
-        <ChevronDown size={20} />
-      </motion.div>
     </header>
   );
 }

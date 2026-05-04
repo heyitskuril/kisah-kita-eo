@@ -101,9 +101,6 @@ export function Navbar({ isScrolled }: NavbarProps) {
             </nav>
 
             <div className="mt-auto space-y-6">
-              <p className="text-brand-secondary/60 text-sm">
-                {BUSINESS_INFO.address}, {BUSINESS_INFO.city}
-              </p>
               <a
                 href={`tel:${BUSINESS_INFO.phone}`}
                 className="flex items-center gap-3 text-xl hover:text-brand-accent transition-colors"

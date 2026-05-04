@@ -41,13 +41,13 @@ export function PackageCard({ pkg, featured = false, animationDelay = 0 }: Packa
         <h3 className="text-2xl font-serif font-bold text-brand-dark group-hover:text-brand-primary transition-colors mb-4">
           {pkg.name}
         </h3>
-        <p className="text-brand-text/60 text-sm mb-6 line-clamp-2 leading-relaxed">
+        <p className="text-brand-text/100 text-sm mb-6 line-clamp-2 leading-relaxed">
           {pkg.description}
         </p>
 
         <ul className="space-y-3 mb-8" aria-label={`Fitur ${pkg.name}`}>
           {pkg.features.map((feat) => (
-            <li key={feat} className="flex items-center gap-2 text-xs font-medium text-brand-text/70">
+            <li key={feat} className="flex items-center gap-2 text-xs font-medium text-brand-text/80">
               <Check size={14} className="text-brand-accent shrink-0" />
               {feat}
             </li>
@@ -56,7 +56,7 @@ export function PackageCard({ pkg, featured = false, animationDelay = 0 }: Packa
 
         <div className="pt-6 border-t border-brand-border flex items-center justify-between">
           <div>
-            <span className="text-[10px] uppercase tracking-widest text-brand-text/40 block mb-1">
+            <span className="text-[10px] uppercase tracking-widest text-brand-text/80 block mb-1">
               Mulai Dari
             </span>
             <span className="text-xl font-bold text-brand-primary">{pkg.price}</span>

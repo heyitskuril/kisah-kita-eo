@@ -42,7 +42,7 @@ export function ProcessSection() {
                 <h4 className="text-xl font-serif font-bold text-brand-dark mb-4">
                   {step.title}
                 </h4>
-                <p className="text-sm text-brand-text/60 leading-relaxed max-w-[200px] mx-auto">
+                <p className="text-sm text-brand-text/80 leading-relaxed max-w-[200px] mx-auto">
                   {step.description}
                 </p>
               </motion.div>

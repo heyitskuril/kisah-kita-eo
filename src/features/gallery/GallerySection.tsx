@@ -4,12 +4,6 @@ import { GALLERY_ITEMS } from '@/constants/gallery';
 import { BUSINESS_INFO } from '@/constants/business';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 
-function getGridClass(size: 'large' | 'medium' | 'small'): string {
-  if (size === 'large') return 'md:col-span-2 md:row-span-2';
-  if (size === 'medium') return 'md:col-span-2';
-  return '';
-}
-
 export function GallerySection() {
   return (
     <section className="py-24 bg-white" id="galeri">
@@ -20,32 +14,44 @@ export function GallerySection() {
           centered
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[700px]">
-          {GALLERY_ITEMS.map((item, i) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
-              className={`relative overflow-hidden rounded-2xl group min-h-[250px] md:min-h-0 ${getGridClass(item.size)}`}
-            >
-              <img
-                src={item.image}
-                alt={item.alt}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/30 transition-colors duration-500" />
-              <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="text-white text-xs font-bold tracking-widest uppercase">
-                  ✦ {item.alt}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-6 auto-rows-[200px] gap-4">
+          {GALLERY_ITEMS.map((item, i) => {
+            let spanClass = '';
 
+            if (i === 0) spanClass = 'md:col-span-3 md:row-span-2'; 
+            else if (i === 1) spanClass = 'md:col-span-3 md:row-span-2';
+            else if (i === 2) spanClass = 'md:col-span-2 md:row-span-2';
+            else if (i === 3) spanClass = 'md:col-span-2 md:row-span-2';
+            else spanClass = 'md:col-span-2 md:row-span-2';
+
+            return (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className={`relative overflow-hidden rounded-2xl group ${spanClass}`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
+
+                {/* Caption */}
+                <div className="absolute bottom-4 left-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                  <p className="text-white text-xs font-semibold tracking-wide">
+                    {item.alt}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
         <div className="mt-12 text-center">
           <a
             href={`https://instagram.com/${BUSINESS_INFO.instagram}`}

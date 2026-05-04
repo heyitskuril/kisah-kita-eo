@@ -22,7 +22,6 @@ export interface Testimonial {
   rating: number;
   review: string;
   avatar: string;
-  product: string;
 }
 
 export interface WeddingStep {

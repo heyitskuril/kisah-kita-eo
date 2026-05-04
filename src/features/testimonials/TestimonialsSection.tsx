@@ -50,8 +50,8 @@ export function TestimonialsSection() {
                 />
                 <div>
                   <h5 className="font-bold text-brand-dark text-sm">{testimonial.name}</h5>
-                  <p className="text-[10px] text-brand-text/50 uppercase tracking-tighter">
-                    {testimonial.city} • {testimonial.product}
+                  <p className="text-[10px] text-brand-text/70 uppercase tracking-wide">
+                    {testimonial.city}
                   </p>
                 </div>
               </div>

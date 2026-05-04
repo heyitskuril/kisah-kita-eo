@@ -13,7 +13,7 @@ export function AdvantagesSection() {
             viewport={{ once: true }}
           >
             <span className="text-brand-accent font-bold uppercase tracking-widest text-xs mb-4 block">
-              ✦ Our Advantages
+              Our Advantages
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 leading-tight">
               Mewujudkan Impian Dengan Cara Paling Tenang
@@ -27,14 +27,14 @@ export function AdvantagesSection() {
               <div>
                 <Clock size={32} className="text-brand-accent mb-2" aria-hidden="true" />
                 <h4 className="font-bold mb-2">Respons Cepat</h4>
-                <p className="text-xs text-brand-secondary/50">
+                <p className="text-xs text-brand-secondary/70 tracking-wide">
                   Admin siaga memberikan feedback dalam hitungan menit.
                 </p>
               </div>
               <div>
                 <MapPin size={32} className="text-brand-accent mb-2" aria-hidden="true" />
                 <h4 className="font-bold mb-2">Local Insight</h4>
-                <p className="text-xs text-brand-secondary/50">
+                <p className="text-xs text-brand-secondary/70 tracking-wide">
                   Relasi kuat dengan vendor-vendor terbaik di Jogja.
                 </p>
               </div>
@@ -59,7 +59,7 @@ export function AdvantagesSection() {
                   />
                   <div>
                     <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                    <p className="text-sm text-brand-secondary/60 leading-relaxed">
+                    <p className="text-sm text-brand-secondary/70 leading-relaxed">
                       {item.description}
                     </p>
                   </div>

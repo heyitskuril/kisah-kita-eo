@@ -26,11 +26,10 @@ export function SectionHeading({ title, subtitle, centered = false }: SectionHea
     >
       {subtitle && (
         <span className="text-brand-accent font-medium tracking-widest uppercase text-xs mb-3 block">
-          ✦ {subtitle}
+          {subtitle}
         </span>
       )}
       <h2 className="section-title">{title}</h2>
-      <div className={`h-1 w-20 bg-brand-accent mt-4 ${centered ? 'mx-auto' : ''}`} />
     </motion.div>
   );
 }

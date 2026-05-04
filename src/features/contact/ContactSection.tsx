@@ -40,7 +40,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">{item.title}</h4>
-                    <p className="text-sm text-brand-text/60 leading-relaxed">{item.value}</p>
+                    <p className="text-sm text-brand-text/80 leading-relaxed">{item.value}</p>
                   </div>
                 </div>
               ))}

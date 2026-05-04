@@ -25,7 +25,7 @@ export function PackagesSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-brand-text/60 mb-6 italic">
+          <p className="text-brand-text/100 mb-6 italic">
             Ingin kustomisasi paket sesuai keinginan anda?
           </p>
           <a

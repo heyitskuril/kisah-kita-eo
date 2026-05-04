@@ -17,7 +17,7 @@ export function FaqItem({ faq }: FaqItemProps) {
             aria-hidden="true"
           />
         </summary>
-        <div className="px-6 pb-6 text-sm text-brand-text/70 leading-relaxed border-t border-brand-border/30 pt-4">
+        <div className="px-6 pb-6 text-sm text-brand-text/80 leading-relaxed border-t border-brand-border/30 pt-4">
           {faq.answer}
         </div>
       </details>

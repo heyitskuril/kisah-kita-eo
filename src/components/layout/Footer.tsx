@@ -13,7 +13,7 @@ export function Footer() {
             <span className="font-serif text-3xl font-bold tracking-tighter block mb-6">
               Kisah<span className="text-brand-accent">Kita.</span>
             </span>
-            <p className="text-brand-secondary/50 text-sm leading-relaxed max-w-sm">
+            <p className="text-brand-secondary/80 text-sm leading-relaxed max-w-sm">
               Cerita cinta Anda adalah inspirasi kami. Mari merayakannya dengan cara yang paling
               teratur, elegan, dan penuh rasa.
             </p>
@@ -23,7 +23,7 @@ export function Footer() {
             <h5 className="font-bold mb-6 text-brand-accent text-xs tracking-widest uppercase">
               Quick Links
             </h5>
-            <ul className="space-y-4 text-sm text-brand-secondary/60">
+            <ul className="space-y-4 text-sm text-brand-secondary/80">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
                   <a
@@ -41,7 +41,7 @@ export function Footer() {
             <h5 className="font-bold mb-6 text-brand-accent text-xs tracking-widest uppercase">
               Connect
             </h5>
-            <div className="flex flex-col gap-4 text-sm text-brand-secondary/60">
+            <div className="flex flex-col gap-4 text-sm text-brand-secondary/80">
               <a
                 href={`https://instagram.com/${BUSINESS_INFO.instagram}`}
                 target="_blank"
@@ -66,10 +66,10 @@ export function Footer() {
         </div>
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] text-brand-secondary/30 uppercase tracking-widest">
+          <p className="text-[10px] text-brand-secondary/80 uppercase tracking-widest">
             © {currentYear} {BUSINESS_INFO.name} Wedding Planner. All Rights Reserved.
           </p>
-          <div className="flex gap-8 text-[10px] text-brand-secondary/30 uppercase tracking-widest">
+          <div className="flex gap-8 text-[10px] text-brand-secondary/80 uppercase tracking-widest">
             <a href="#" className="hover:text-brand-accent transition-colors">
               Privacy Policy
             </a>

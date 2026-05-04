@@ -32,7 +32,7 @@ export function FaqSection() {
           <h4 className="text-xl md:text-2xl font-serif mb-3 md:mb-4">
             Masih Butuh Penjelasan?
           </h4>
-          <p className="text-sm text-brand-secondary/60 mb-6 md:mb-8">
+          <p className="text-sm text-brand-secondary/80 mb-6 md:mb-8">
             Tim admin kami siap membantu menjelaskan detail paket via chat personal.
           </p>
           <a
