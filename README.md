@@ -61,6 +61,7 @@ kisah-kita-eo/
 │   │   │   ├── Navbar.tsx          # Scroll-aware glass navbar + mobile overlay
 │   │   │   └── Footer.tsx          # Site-wide footer with quick links
 │   │   └── ui/
+│   │       ├── FloatingdevBadge.tsx  # Floating Developer Badge
 │   │       ├── FloatingWhatsApp.tsx  # Floating CTA button
 │   │       ├── SectionHeading.tsx    # Reusable animated section title
 │   │       └── WhatsAppIcon.tsx      # Inline SVG WA icon
